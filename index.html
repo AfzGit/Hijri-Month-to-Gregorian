@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hijri Date Converter</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <script src="./moment.js"></script>
+    </head>
+    <body>
+        <h1>Simple Hijri to Gregorian Calendar</h1>
+
+        <p>
+            Today's date is: <b><span id="gregorian-date"></span></b> <br />
+        </p>
+
+        <form id="hijri-form">
+            <label for="current-hijri-date"><b>Current Hijri day:</b></label>
+            <input type="text" id="current-hijri-date" value="1" /> <br />
+            <br />
+            Is the current Hijri date above between Maghrib and 12 AM (00:00)?
+            <br />
+            (if yes, Maghrib has already passed, but the previous Gregorian day
+            is still ongoing.) <br />
+            <br />
+            <select class="form-control" required>
+                <option value="">Select your answer</option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <br />
+            <br />
+            <br />
+
+            <button type="submit">Convert</button>
+        </form>
+        <br />
+        <br />
+        <b id="result"></b>
+
+        <h2>Notes</h2>
+        <p>
+            Shows starting time of Hijri. Not dependent on Gregorian day ending.
+            <br />
+            <br />
+            🍎 = Fasting Days <br />
+            -> Starts after Gregorian day's Fajr. <br />
+            -> Contains weekly and monthly fasts. <br />
+            -> As hijri starts before Gregorian days, the monthly fast days are
+            incremented by 1 to indicate that they start in Fajr of the next
+            Gregorian day. <br />
+            -> Two apples means that day contains monthly and weekly fast.
+            <br />
+            <br />
+            🕌 = Jummah/Friday <br />
+            <br />
+            <font color="red">Red Color</font> = Today's Day <br />
+        </p>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
