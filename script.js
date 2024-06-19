@@ -23,7 +23,7 @@ function hijriToGregorian(hijri, diff) {
         }
         if ((i == 14) | (i == 15) | (i == 16)) {
             msg += "🍎";
-            color = "pink"
+            color = "blue"
         }
         if (dayonly == "Friday") {
             msg += "🕌";
