@@ -27,7 +27,7 @@ function hijriToGregorian(hijri, diff) {
         }
         if (dayonly == "Friday") {
             msg += "🕌";
-            color = "orange"
+            color = "brown"
         }
         if (i == hijri) {
             color = "red";
