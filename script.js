@@ -19,12 +19,15 @@ function hijriToGregorian(hijri, diff) {
 
         if ((dayonly == "Monday") | (dayonly == "Thursday")) {
             msg += "🍎";
+            color = "purple"
         }
         if ((i == 14) | (i == 15) | (i == 16)) {
             msg += "🍎";
+            color = "pink"
         }
         if (dayonly == "Friday") {
             msg += "🕌";
+            color = "orange"
         }
         if (i == hijri) {
             color = "red";
