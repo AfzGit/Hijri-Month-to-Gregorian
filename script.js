@@ -20,7 +20,7 @@ function hijriToGregorian(hijri, diff) {
         if ((dayonly == "Monday") | (dayonly == "Thursday")) {
             msg += "🍎";
         }
-        if ((i == 14) | (i == 15) | (i == 16)) {
+        if ((i == 13) | (i == 14) | (i == 15)) {
             msg += "🍎";
         }
         if (dayonly == "Friday") {
