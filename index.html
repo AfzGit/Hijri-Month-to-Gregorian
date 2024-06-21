@@ -15,15 +15,19 @@
         </p>
 
         <form id="hijri-form">
-            <label for="current-hijri-date"><b>Current Hijri day (1-30):</b></label>
+            <label for="current-hijri-date"
+                ><b>Current Hijri day (1-30):</b></label
+            >
             <input type="text" id="current-hijri-date" value="1" /> <br />
             <br />
-            Is the current Hijri date between Maghrib and 12 AM (00:00)? 
+            Is the current Hijri date between Maghrib and 12 AM (00:00)?
             <br />
-            -> if yes, Maghrib has already passed, but the previous Gregorian day
-            is still ongoing. <br />
-            -> if no, Maghrib has already passed, and the next Gregorian day has started - as it's past 24:00. <br />
-            -> Check Magribh/sunset times <a href="https://salah.com">Here</a> <br />
+            -> if yes, Maghrib has already passed, but the previous Gregorian
+            day is still ongoing. <br />
+            -> if no, Maghrib has already passed, and the next Gregorian day has
+            started - as it's past 24:00. <br />
+            -> Check Magribh/sunset times <a href="https://salah.com">Here</a>
+            <br />
             <br />
             <select class="form-control" required>
                 <option value="">Select your answer</option>
@@ -48,13 +52,18 @@
             <br />
             🍎 = Fasting Days <br />
             -> Contains weekly (Mon/Thu) and monthly fasts (13/14/15H). <br />
-            -> Fasting day starts on the next Gregorian day's Fajr. So while 20 June may show an apple, the fast starts next day at 21 June after Fajr. <br />
+            -> Any monthly fasting day will begin at Fajr on the following
+            Gregorian day. <br />
+            --> For instance, while 20 June (13 Hijri) might indicate a fasting day,
+            the fast actually starts the next day, 21 June (13 Hijri), after
+            Fajr. <br />
             -> Two apples means that day contains monthly and weekly fast.
             <br />
             <br />
             🕌 = Jummah/Friday <br />
             <br />
             <font color="red">Red Color</font> = Today's Day <br />
+            <p><em>I highly encourage users of this tool to also learn the Hijri months here: <a href="./hijri.html">Hijri Info</a></em></p>
         </p>
 
         <script src="./script.js"></script>
